@@ -1,0 +1,225 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    text-align: center;
+}
+
+
+nav {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+
+ul,li {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    max-width: 50%;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+
+ 
+}
+
+@media (max-width: 576px) {
+    nav, nav ul {
+        flex-direction: column;
+        align-items:center;
+    }
+
+}
+
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    /* Isso define um recipiente flex; inline ou bloco, 
+    dependendo do valor dado. 
+    Permite um contexto flex para todos os seus filhos diretos.*/
+    
+    flex-direction:column;
+    /*Isso estabelece o main axis, definindo assim a 
+    direção que os itens flex são colocados no recipiente flex..*/
+}
+#container div {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+#container2{
+    background-color: #003049;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    /* A propriedade alinha os itens flexíveis  quando 
+    os itens não utilizam todo o espaço disponível no main axis 
+    (horizontalmente ou verticalmente). ..*/
+     }
+#container2 div {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+
+}     
+     
+#container3{
+    background-color: #003049;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: column;
+
+    flex-wrap: wrap-reverse;
+    /*todos os itens flex tentarão se encaixar em uma linha. 
+     Você pode alterar isso e permitir que os itens embrulhem 
+     conforme necessário com esta propriedade.*/
+
+    }  
+     #container3 div {
+    width: 100px;
+    height: 100px;
+
+}
+#container4{
+    background-color: #003049;
+    border: 5px solid #003049;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items:flex-start;
+     /* Isso define o comportamento padrão de como os itens flex 
+     são dispostos ao longo do cross axis na linha atual. 
+     Pense nisso como a versão para eixo transversal..
+     */
+     flex-wrap: wrap;
+     }
+#container4 div {
+    width: 100px;
+    height: 100px;
+
+}    
+#container5{
+    background-color: #003049;
+    border: 5px solid #003049;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    align-content: flex-end;
+    /*Isso alinha as linhas de um recipiente flex dentro quando 
+     há espaço extra no eixo transversal, semelhante à forma como 
+     alinha itens individuais dentro do eixo principal.*/
+    }
+    
+
+#container5 div{
+    width: 100px;
+    height: 100px;
+}
+/*
+------------------------------------------------------------------
+FLEXBOX ITENS
+*/
+
+#container6 {
+    width: 90%;
+    height: 200px;
+    background-color: #003049;
+    border: 5px solid #003049;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+#container6 div {
+width: 100px;
+height: 100px;
+}
+#container6 div:nth-of-type(5){
+     align-self:flex-start;
+     /* align-self estabelece o alinhamento de um certo item dentro 
+     do bloco que o contém. Em Flexbox ele controla o alinhamento 
+     dos itens em Cross Axis, enquanto que no Grid Layout, 
+     controla o alinhamento dos itens no Eixo de Bloco dentro de sua  
+     grid area.*/
+}
+#container7 {
+    width: 90%;
+    /*height:200px*/
+    background-color: #003049;
+    border: 5px solid #003049;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+#container7 div {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    flex-basis: 250px;
+
+}
+
+#container8{
+    width: 90%;
+    height: 200xp;
+    background-color: #003049;
+    border: 5px solid #003049;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+#container8 div{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    flex-basis: 200px;
+/*     max-width: 300px; */
+    flex-grow: 1;
+}
+
+#container8 div:nth-of-type(1) {
+    flex-grow: 1;
+    flex-shrink: 3;
+}
+#container8 div:nth-of-type(5) {
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+

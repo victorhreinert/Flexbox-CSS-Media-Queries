@@ -1,0 +1,108 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding: 0;
+    margin: 0;
+
+
+
+}
+ul,li {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    max-width: 50%;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+   
+    
+   
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+
+#container6 {
+    width: 90%;
+    height: 200px;
+    background-color: #003049;
+    border: 5px solid #003049;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+#container6 div {
+width: 100px;
+height: 100px;
+}
+#container6 div:nth-of-type(5){
+     align-self:flex-start;
+     /* align-self estabelece o alinhamento de um certo item dentro 
+     do bloco que o contém. Em Flexbox ele controla o alinhamento 
+     dos itens em Cross Axis, enquanto que no Grid Layout, 
+     controla o alinhamento dos itens no Eixo de Bloco dentro de sua  
+     grid area.*/
+}
+#container7 {
+    width: 90%;
+    /*height:200px*/
+    background-color: #003049;
+    border: 5px solid #003049;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+#container7 div {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    flex-basis: 250px;
+
+}
+
+#container8{
+    width: 90%;
+    height: 200xp;
+    background-color: #003049;
+    border: 5px solid #003049;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+#container8 div{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    flex-basis: 200px;
+/*     max-width: 300px; */
+    flex-grow: 1;
+}
+
+#container8 div:nth-of-type(1) {
+    flex-grow: 1;
+    flex-shrink: 3;
+}
+#container8 div:nth-of-type(5) {
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+
