@@ -12,22 +12,35 @@ nav{
 
 
 }
+
+.navbar{
+    background-color: #003049;
+    margin: 0px 0px;
+    padding: 10px 9px;
+}
 ul,li {
     display: flex;
     flex-direction: row;
     flex: 1;
     max-width: 50%;
     justify-content: space-evenly;
+    list-style: none;
     padding: 0;
     margin: 0;
-   
-    
-   
+
 }
 
 h1{
     text-align: center;
 }
+
+a{
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+
+}
+
 
 @media (max-width: 576px) {
     nav, nav ul {

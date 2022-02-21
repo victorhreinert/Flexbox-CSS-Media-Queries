@@ -9,6 +9,7 @@ nav {
 
 }
 
+
 ul, li {
     margin: 0;
     padding: 0;
@@ -23,6 +24,17 @@ ul, li {
 li {
     font-weight: 1.2em; 
 
+}
+.navbar{
+    background-color: #003049;
+    margin: 0px 0px;
+    padding: 13px 9px;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
 }
 
 h1 {
